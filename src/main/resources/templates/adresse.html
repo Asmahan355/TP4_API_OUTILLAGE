@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adress</title>
+    <meta http-equiv="Content-Type" content="text/html ; charset=UTF-8"/>
+    <script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css"/>
+</head>
+<body>
+<div th:replace="nav :: nav"></div>
+<!-- Centered and smaller form -->
+<div class="d-flex justify-content-center align-items-center" style="height: 70vh;">
+    <form action="/meteo" method="post" class="w-50">
+        <div class="mb-3">
+            <label for="address" class="form-label">Please input your address:</label>
+            <input name="address" id="address" class="form-control" />
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Get the weather at the given address!</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

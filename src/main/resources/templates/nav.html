@@ -1,0 +1,30 @@
+<!-- navbar.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Navigation Bar</title>
+    <script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+                <a class="nav-link" th:href="@{/adresses}">Adresses</a>
+                <a class="nav-link " th:href="@{/greeting}">Gretting</a>
+
+                <a class="nav-link " th:href="@{/adresse}">Adresse</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
